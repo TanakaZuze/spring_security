@@ -49,22 +49,15 @@ Create a local config file:
 
 
 
-Running the Project
+## 🧪 Running the Project
 
-Clone the repository
-
-Configure your MySQL database
-
-Add email credentials to application-local.properties
-
-Run the application:
-
+1. **Clone the repository**  
+   ```bash
+   git clone <your-repo-url>
+   cd <repo-folder>
 mvn spring-boot:run
-
-
-Open:
-
 http://localhost:8080
+
 
 📌 Notes
 
