@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
@@ -38,6 +39,12 @@ public class AuthenticationController {
     @GetMapping()
     public String index(){
         return "index";
+    }
+
+    @GetMapping("/confirm-token")
+    public String confirmToken(@RequestParam ("token") String token){
+        userDetailsService.confirmToken(token);
+        return "confirm-token";
     }
 
 }
