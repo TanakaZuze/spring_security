@@ -71,7 +71,3 @@ The project is designed to be reusable as a base authentication template for fut
 
 Tanaka Zuze
 Aspiring Java / Backend Engineer with a strong interest in enterprise software development.
-
-📄 License
-
-This project is for educational and portfolio purposes.
