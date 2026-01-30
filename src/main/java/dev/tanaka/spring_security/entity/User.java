@@ -15,22 +15,16 @@ public class User implements UserDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
     private String first_name;
 
-    @Column(nullable = false)
     private String last_name;
 
-    @Column(nullable = false)
     private String username;
 
-    @Column(nullable = false)
     private String password;
 
-    @Column(nullable = false)
     private String email;
 
-    @Column(nullable = false)
     private boolean is_enabled;
 
 //    Lombok ie constructor
@@ -60,10 +54,12 @@ public class User implements UserDetails {
         return password;
     }
 
+
     @Override
     public String getUsername() {
         return username;
     }
+
 
     @Override
     public boolean isAccountNonExpired() {

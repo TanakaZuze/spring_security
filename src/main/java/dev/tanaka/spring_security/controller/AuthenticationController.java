@@ -34,4 +34,10 @@ public class AuthenticationController {
 
         return "redirect:/register";
     }
+
+    @GetMapping()
+    public String index(){
+        return "index";
+    }
+
 }
